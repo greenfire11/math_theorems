@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath} % for math environments and symbols
+\usepackage{amsthm} % for the proof environment
+\usepackage{amssymb} % for additional math symbols
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+ \geometry{margin=0.7in}
+
+\newtheorem{theorem}{Theorem}[]
+\newtheorem*{Uniqueness of representation*}{Uniqueness of representation}
+\newtheorem*{kernel*}{Kernel}
+\newtheorem*{range*}{Range}
+\newtheorem*{theorem2*}{}
+
+
+\begin{document}
+
+\fontsize{12pt}{12pt}\selectfont
+\vspace*{\stretch{1.0}}
+   \begin{center}
+      \Large\textbf{Linear Algebra}\\
+   \end{center}
+   \vspace*{\stretch{2.0}}
+\section*{Theorem 2}
+Let $(V; F;+;\cdot)$ be a vector space over the field F. Let n $\in \mathbb{N}^*$
+and U{$\vec{u_1,u_2...u_n}$} be a set of vectors $\in$ V. Then span(U) is a subspace of V.
+\begin{proof}
+  Let span(U) be the set of vectors which can be written as a linear combination of the vectors in U
+  \begin{itemize}
+    \item $\vec{0} \in$ span(u) because $\vec{0}=\overbrace{\lambda_1}^{0}\cdot\vec{u_1}+\overbrace{\lambda_2}^{0}\cdot\vec{u_2}+\overbrace{\lambda_n}^{0}\cdot\vec{u_n}$
+    \item Let $\vec{u},\vec{w} \in$ span(U) and let $\mu \in$F\\
+    We want to show that $\vec{u}+\mu \cdot \vec{w} \in$ span(U)\\
+    Let $\vec{u}$=$\alpha_1\vec{u_1}+...\alpha_n\vec{u_n}$ \hspace{1cm}
+    $\vec{w}=\beta_1\vec{u_1...\beta_n\vec{u_n}}$\\
+    $\vec{u}+\mu\vec{w}=\alpha_1\vec{u_1}+...+\alpha_n\vec{u_n}+\mu \cdot$($\beta_1\vec{u_1}+...+\beta_n\vec{u_n}$)=\\
+    =($\alpha_1+\mu \beta_1$)$\cdot \vec{u_1}$+...+($\alpha_n+\mu \beta_n$)$\cdot \vec{u_n}$$\hspace{0.5cm} \in$ span(U)
+    $\Rightarrow$ span(U) is a subset of V.
+\end{itemize}
+\end{proof}
+\setcounter{section}{2}
+\section*{Theorem 3}
+\begin{Uniqueness of representation*}
+\nonumber
+Let $(V; F;+;\cdot)$ be a vector space over the field F.
+Let B = $\{\vec{b_1},\vec{b_2},...,\vec{b_n}\}$ be a set of vectors $\in$ V. Then B is a basis of V if and only if every vector $\vec{v}$ $\in$ V can be written uniquely as a linear combination of the basis vectors of B.
+\end{Uniqueness of representation*}
+
+\begin{proof}
+Let B = $\{\vec{b_1},\vec{b_2},...,\vec{b_n}$ be a set of vectors in V. \\
+$\rightarrow $Let B be a basis of  V.\\
+We want to show that every vector $\vec{v}$ $\in$ V can be written uniquely as a linear combination of the vectors of B. \\
+Assume that $\vec{v}$ can't be written uniquely as a linear combination of the vectors of B: \\
+Since B is a basis of V, then $\vec{v}$ can be written as a linear combination of the vectors of B.\\
+$\vec{v}$ = $\lambda_{1}$  $\cdot$ $\vec{b_1}$ +...+ $\lambda_{n}$ $\cdot$ $\vec{b_n}$ and $\vec{v}$ = $\alpha_{1}$ $\cdot$
+$\vec{b_1}$+...+$\alpha_{n}$ $\cdot$$\vec{b_n}$ \\
+$\vec{v}$ - $\vec{v}$=($\lambda_{1}$ $\cdot$ $\vec{b_1}$+...+$\lambda_{n}$ $\cdot$ $\vec{b_n}$)-($\alpha_{1}$ $\cdot$ $\vec{b_1}$+...+$\alpha_{n}$ $\cdot$ $\vec{b_n}$)=$\vec{0}$ \\
+$\iff$ $\vec{0}$=($\lambda_1-\alpha_1$) $\cdot$ $\vec{b_1}$+...+($\lambda_1-\alpha_n$) $\cdot$ $\vec{b_n}$ //
+Since B is a basis of V, them $\vec{b_1}...\vec{b_1}$ are linearly independent which implies: \\
+$\lambda_1-\alpha_1=0,...,\lambda_n-alpha_n=0$ $\iff \lambda_1=\alpha_1,...,\lambda_n=\alpha_n$ \\
+which is a contradiction, since it proves that any vector $ \vec{v} \in$ V is written uniquely as
+a linear combination of the basis vectors of B.\\ \\
+$\leftarrow$ Assume that every vector $\vec{v} \in$ V can be written uniquely as a linear combination
+of the vectors of B.\\
+We want to show that B is a basis of V \\
+Let $\vec{v} \in$ span(B): $\vec{v}=\alpha_1 \cdot \vec{b_1}+...+\alpha_n \cdot \vec{b_n} \in$ V
+since V is a vector space and closed under vector addition and scalar multiplication.
+Hence span(B)=V since every vector $\vec{v} \in$ V can be written as a linear combination
+of the vectors of B by hypothesis.\\
+
+
+    \[
+\left\{
+                \begin{array}{ll}
+                  \vec{0}=\lambda_1 \cdot \vec{b_1}+...+\lambda_n \cdot \vec{b_n}\\
+                  \vec{0}=0 \cdot \vec{b_1}+...+0 \cdot \vec{b_n}
+                \end{array}
+              \right.
+  \]
+  Since we assumed that there is only one way to write every vector $\vec{v} \in$V, then $\lambda_1=0...\lambda_n=0$
+  It proves that the vectors of the set B are linearly independent.
+  $\Rightarrow $ B is a basis of V.
+\end{proof}
+\setcounter{section}{4}
+\pagebreak
+\section*{Theorem 5}
+\begin{kernel*}
+Let f: V$\rightarrow $W be a linear map. Then ker(f) is a subspace of V.
+\end{kernel*}
+
+\begin{proof}
+    Let f: V$\rightarrow $W be a linear map. \\
+    f($\vec{u}+\lambda\vec{v})=f(\vec{u})+\lambda \cdot f(\vec{v})\hspace{2cm}$$\forall \vec{u},\vec{v} \in V$
+    \\Since V is a vector space,then V $\neq \emptyset$ by definition.
+    \\ $\Rightarrow \exists \vec{u} \in V$ and since V is a vector space, there is closure under
+    scalar multiplication, ie $\lambda \cdot \vec{u} \in V$ $\forall \lambda \in  $ \\
+    $\Rightarrow 0 \cdot \vec{u} \in V \iff \vec{0} \in V$\\
+    1) We want to show that Ker(f) $\ne \emptyset$ by showing that $\vec{0} \in Ker(f)$\\
+    f($\underbrace{\vec{0}}_{\textbf{$\in$ V}}$)=f(0 $\cdot \vec{u}$)$\overbrace{=}^{\textbf{f = lin. map}}$0 $\cdot f(\vec{u})$=$\underbrace{\vec{0}}_{\textbf{$\in$ W}}$
+    $\Rightarrow \vec{0} \in ker(f)$\\
+    2) Let $\vec{u},\vec{v}\in ker(f), \lambda \in \mathbb{R} $\\
+    Since $\vec{u}$, $\vec{v}$ $\in$ ker(f) $\Rightarrow$ f($\vec{u}$)=$\vec{0}$ and f($\vec{v}$)=0\\
+    f($\vec{u}+\lambda\vec{v}$)$\underbrace{=}_{\textbf{f = lin. map}}$f($\vec{u}$)+$\lambda \cdot f(\vec{v})$=$\vec{0} + \lambda \vec{0}$=$\vec{0}$
+    $\Rightarrow \vec{u} + \lambda v \in ker(f)$\\
+    Since $\vec{0} \in$ ker(f) and $\vec{u}+\lambda \vec{v} \in$ ker(f) $\forall \vec{u},\vec{v} \in$ ker(f)\\
+    $\Rightarrow$ ker(f) is a subspace of V 
+
+    
+
+    
+
+
+\end{proof}
+
+
+
+\section*{Theorem 6}
+
+\begin{range*}
+  Let f : V → W be a linear map. Then Im(f) is a subspace of W.
+  \end{range*}
+\begin{proof}
+  $\linebreak$
+  1) We have show that f($ \vec{0}$)=$\underbrace{\vec{0}}_{\in W}$\\
+  $\vec{0} \in$ Im(f) since $\exists \vec{0} \in V$ such that f($\vec{0}$)=$\vec{0}$\\
+  $\linebreak$
+  2) Let $\vec{w_1},\vec{w_2} \in Im(f)$\\
+  $\exists \vec{u_1},\vec{u_2} \in $V such that f($\vec{u_1}$)=$\vec{w_1}$ and f($\vec{u_2}$)=$\vec{w_2}$\\
+  Let $\lambda \in $R: We want to show that $\vec{w_1}+\lambda \vec{w_2} \in$ Im(f)\\
+  $\vec{w_1}+\lambda \cdot \vec{w_2}$=f($\vec{u_1}$)+$\lambda \cdot f(\vec{u_2})$$\overbrace{=}^{f=lin. map}$$\underbrace{f(\vec{u_1}+\lambda \cdot \vec{u_2})}_{\in \text{V(since V is a vec. space)}}$\\
+  Since $\exists \vec{u_1}+\vec{u_2} \in$ V such that\\
+  f($\vec{u_1}+\lambda \vec{v_2}$)=$\vec{w_1}+\lambda \vec{w_2}$, then $\vec{w_1}+ \lambda \vec{w_2} \in$Im(f)\\
+  $\Rightarrow$Im(f) is a subspace of W
+
+\end{proof}
+\end{document}
+
