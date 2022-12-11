@@ -33,17 +33,17 @@
    \vspace*{\stretch{2.0}}
 \section*{Theorem 2}
 Let $(V; F;+;\cdot)$ be a vector space over the field F. Let n $\in \mathbb{N}^*$
-and U{$\vec{u_1,u_2...u_n}$} be a set of vectors $\in$ V. Then span(U) is a subspace of V.
+and U= $\left\{ \vec{u_1},\vec{u_2}...\vec{u_n} \right\}$ be a set of vectors $\in$ V. Then span(U) is a subspace of V.
 \begin{proof}
   Let span(U) be the set of vectors which can be written as a linear combination of the vectors in U
   \begin{itemize}
     \item $\vec{0} \in$ span(u) because $\vec{0}=\overbrace{\lambda_1}^{0}\cdot\vec{u_1}+\overbrace{\lambda_2}^{0}\cdot\vec{u_2}+\overbrace{\lambda_n}^{0}\cdot\vec{u_n}$
     \item Let $\vec{u},\vec{w} \in$ span(U) and let $\mu \in$F\\
-    We want to show that $\vec{u}+\mu \cdot \vec{w} \in$ span(U)\\
+    We want to show that $\vec{u}+\mu \cdot \vec{w} \in$ span(U)\\\\
     Let $\vec{u}$=$\alpha_1\vec{u_1}+...\alpha_n\vec{u_n}$ \hspace{1cm}
-    $\vec{w}=\beta_1\vec{u_1...\beta_n\vec{u_n}}$\\
+    $\vec{w}=\beta_1\vec{u_1...\beta_n\vec{u_n}}$\\\\
     $\vec{u}+\mu\vec{w}=\alpha_1\vec{u_1}+...+\alpha_n\vec{u_n}+\mu \cdot$($\beta_1\vec{u_1}+...+\beta_n\vec{u_n}$)=\\
-    =($\alpha_1+\mu \beta_1$)$\cdot \vec{u_1}$+...+($\alpha_n+\mu \beta_n$)$\cdot \vec{u_n}$$\hspace{0.5cm} \in$ span(U)
+    =($\underbrace{\alpha_1+\mu \beta_1}_{\in F} $)$\cdot \vec{u_1}$+...+($\underbrace{\alpha_n+\mu \beta_n}_{\in F}$)$\cdot \vec{u_n}$$\hspace{0.5cm} \in$ span(U)
     $\Rightarrow$ span(U) is a subset of V.
 \end{itemize}
 \end{proof}

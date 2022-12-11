@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1670276316 "/Users/jafar/latex projetcts/Theorems/main.tex" "main.pdf" "main" 1670276317 0
-  "/Users/jafar/latex projetcts/Theorems/main.tex" 1670276315 7307 df310f2a91c8e706b9ebfbda4371e642 ""
+["pdflatex"] 1670774580 "/Users/jafar/latex projetcts/Theorems/main.tex" "main.pdf" "main" 1670774581 0
+  "/Users/jafar/latex projetcts/Theorems/main.tex" 1670774580 7383 4888fe94ce6a26231bd93da173a00d90 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -67,8 +67,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1670161921 4623329 5e28269c2aee4b9e2f0ef6bdcff03654 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670161984 3063373 cc2be4f545e5da85e68ae9349cf5d976 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1670276317 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
-  "main.tex" 1670276315 7307 df310f2a91c8e706b9ebfbda4371e642 ""
+  "main.aux" 1670774581 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
+  "main.tex" 1670774580 7383 4888fe94ce6a26231bd93da173a00d90 ""
   (generated)
   "main.aux"
   "main.log"
